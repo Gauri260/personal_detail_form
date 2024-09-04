@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+</head>
+<body>
+
+    <h2>Personal Details</h2>
+
+    <form action="/submit_form" method="post">
+
+        <!-- First Name -->
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <br><br>
+
+        <!-- Middle Name -->
+        <label for="middlename">Middlename:</label>
+        <input type="text" id="middlename" name="middlename">
+        <br><br>
+
+        <!-- Last Name -->
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br><br>
+
+        <!-- Course -->
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91" required>
+        <br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="2" cols="30" required></textarea>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Re-type Password -->
+        <label for="repassword">Re-type Password:</label>
+        <input type="password" id="repassword" name="repassword" required>
+        <br><br>
+
+        <!-- Agree to Terms -->
+        <label for="terms">Agree to terms and conditions</label>
+        <input type="checkbox" id="terms" name="terms" required>
+        <br><br>
+
+        <!-- File Upload -->
+        <label for="file">Choose File:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+
+        <!-- Choose Color -->
+        <label for="color">Choose Color:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
